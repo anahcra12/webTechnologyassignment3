@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -109,4 +109,62 @@
 
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade & SGPA Calculator</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Grade & SGPA Calculator</h1>
+
+    <label>Student Name:</label>
+    <input type="text" id="studentName" placeholder="Enter student name">
+
+    <h3>Enter Marks</h3>
+
+    <div class="subject">
+        <label>Design and Analysis of Algorithm (3 Credits):</label>
+        <input type="number" id="daa" min="0" max="100">
+    </div>
+
+    <div class="subject">
+        <label>Computer Architecture and Organization I (3 Credits):</label>
+        <input type="number" id="cao" min="0" max="100">
+    </div>
+
+    <div class="subject">
+        <label>Programming Paradigms (3 Credits):</label>
+        <input type="number" id="pp" min="0" max="100">
+    </div>
+
+    <div class="subject">
+        <label>Theory of Computation (4 Credits):</label>
+        <input type="number" id="toc" min="0" max="100">
+    </div>
+
+    <div class="subject">
+        <label>Introduction to Data Science (3 Credits):</label>
+        <input type="number" id="ids" min="0" max="100">
+    </div>
+
+    <button id="calculate">Calculate Result</button>
+    <button id="reset">Reset</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="grade.js"></script>
+
+</body>
 </html>
