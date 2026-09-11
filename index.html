@@ -4,61 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>CST Faculty</title>
+
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
+
     <div class="container">
-        <span>
-            <h1>COMPUTER SCIENCE and TECHNOLOGY</h1>
-        </span>
+
+        <h1>CST Faculty Members</h1>
+
+        <!-- Faculty selection -->
+        <div class="selectfaculty">
+            <label for="facultySelect">Select Faculty: </label>
+
+            <select id="facultySelect">
+                <option value="">-- Select Faculty --</option>
+                <option value="0">Abhik Mukherjee</option>
+                <option value="1">Sekhar Mandal</option>
+                <option value="2">Tamal Pal</option>
+                <option value="3">Apurba Sarkar</option>
+                <option value="4">Biplab K. Sikdar</option>
+                <option value="5">Jaya Sil</option>
+                <option value="6">Nirnay Ghosh</option>
+                <option value="7">Sipra Das Bit</option>
+                <option value="8">Ashish Kumar Layek</option>
+                <option value="9">Surajeet Ghosh</option>
+                <option value="10">Asit Kumar Das</option>
+            </select>
+        </div>
+
+
+        <!-- YOUR EXISTING CARDS -->
         <div class="display">
+
             <div class="card card1">
                 <div class="info">
                     <h2>Abhik Mukherjee</h2>
+
                     <div class="details">
-                    <p>Associate Professor</p>
-                    <p>Computer Science and Technology</p>
+                        <p>Associate Professor</p>
+                        <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
-            
-             <div class="card card2">
+
+
+            <div class="card card2">
                 <div class="info">
                     <h2>Sekhar Mandal</h2>
+
                     <div class="details">
-                    <p>Professor</p>
-                    <p>Computer Science and Technology</p>
+                        <p>Professor</p>
+                        <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
 
-              <div class="card card3">
+
+            <div class="card card3">
                 <div class="info">
                     <h2>Tamal Pal</h2>
+
                     <div class="details">
-                    <p>Assistant Professor</p>
-                    <p>Computer Science and Technology</p>
+                        <p>Associate Professor</p>
+                        <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
 
-             
-              <div class="card card4">
+
+            <div class="card card4">
                 <div class="info">
                     <h2>Apurba Sarkar</h2>
+
                     <div class="details">
-                    <p>Associate Professor</p>
-                    <p>Computer Science and Technology</p>
+                        <p>Associate Professor</p>
+                        <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
-             
-              <!-- Card 5 -->
+
+
             <div class="card card5">
                 <div class="info">
                     <h2>Biplab K. Sikdar</h2>
+
                     <div class="details">
                         <p>Professor</p>
                         <p>Computer Science and Technology</p>
@@ -66,10 +99,11 @@
                 </div>
             </div>
 
-            <!-- Card 6 -->
+
             <div class="card card6">
                 <div class="info">
-                    <h2>Jaye Sil</h2>
+                    <h2>Jaya Sil</h2>
+
                     <div class="details">
                         <p>Professor</p>
                         <p>Computer Science and Technology</p>
@@ -77,10 +111,11 @@
                 </div>
             </div>
 
-            <!-- Card 7 -->
+
             <div class="card card7">
                 <div class="info">
                     <h2>Nirnay Ghosh</h2>
+
                     <div class="details">
                         <p>Assistant Professor</p>
                         <p>Computer Science and Technology</p>
@@ -88,10 +123,11 @@
                 </div>
             </div>
 
-            <!-- Card 8 -->
+
             <div class="card card8">
                 <div class="info">
                     <h2>Sipra Das Bit</h2>
+
                     <div class="details">
                         <p>Professor</p>
                         <p>Computer Science and Technology</p>
@@ -99,31 +135,35 @@
                 </div>
             </div>
 
-            <!-- Card 9 -->
+
             <div class="card card9">
                 <div class="info">
                     <h2>Ashish Kumar Layek</h2>
+
                     <div class="details">
                         <p>Assistant Professor</p>
                         <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
+
 
             <div class="card card10">
                 <div class="info">
                     <h2>Surajeet Ghosh</h2>
+
                     <div class="details">
-                        <p>Head & Associate Professor</p>
+                        <p>Associate Professor</p>
                         <p>Computer Science and Technology</p>
                     </div>
                 </div>
             </div>
 
-            
+
             <div class="card card11">
                 <div class="info">
                     <h2>Asit Kumar Das</h2>
+
                     <div class="details">
                         <p>Professor</p>
                         <p>Computer Science and Technology</p>
@@ -133,6 +173,46 @@
 
         </div>
     </div>
+
+
+    <!-- Profile window -->
+    <div class="profile">
+
+        <button class="close">×</button>
+
+        <div class="profile-photo">
+            <img id="profileImage" src="" alt="Faculty Photo">
+        </div>
+
+        <div class="profile-content">
+
+            <h2 id="profileName"></h2>
+
+            <p id="profileDesignation" class="designation"></p>
+
+            <hr>
+
+            <h3>Highest Qualification</h3>
+            <p id="profileQualification"></p>
+
+            <h3>Subjects Teaching in Current Semester</h3>
+            <p id="profileSubjects"></p>
+
+            <h3>Research Areas</h3>
+            <p id="profileResearch"></p>
+
+            <h3>Email</h3>
+            <p>
+                <a id="profileEmail" href=""></a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script1.js"></script>
+
 </body>
 
 </html>

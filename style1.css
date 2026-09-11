@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f3e8ff;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #4b176e;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* Faculty selection */
+
+.selectfaculty {
+    margin-bottom: 30px;
+}
+
+.selectfaculty label {
+    color: #4b176e;
+    font-weight: bold;
+}
+
+.selectfaculty select {
+    padding: 8px 12px;
+    border: 2px solid #4b176e;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+/* YOUR EXISTING CARD DESIGN */
+
+.display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    width: 230px;
+    height: 280px;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding: 15px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.info h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.details {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .details {
+    opacity: 1;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+
+/* -------------------------------- */
+/* LARGE PROFILE */
+/* -------------------------------- */
+
+.profile {
+    display: none;
+}
+
+
+/* Dark background behind profile */
+
+body.profile-open::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    z-index: 999;
+}
+
+
+/* 80% screen profile */
+
+.profile.active {
+    display: block;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80vw;
+    height: 80vh;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    z-index: 1000;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Photo on LEFT */
+
+.profile-photo {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 42%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    background-color: white;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 75%;
+
+    max-width: 400px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Information on RIGHT */
+
+.profile-content {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 58%;
+    height: 100%;
+
+    padding: 45px 50px;
+
+    overflow-y: auto;
+
+    text-align: left;
+
+    background-color: white;
+}
+
+.profile-content h2 {
+    color: #4b176e;
+
+    font-size: 32px;
+
+    margin-top: 0;
+}
+
+.profile-content h3 {
+    color: #4b176e;
+
+    margin-top: 22px;
+}
+
+.profile-content p {
+    line-height: 1.6;
+
+    color: #333;
+}
+
+.designation {
+    color: #7b3f98 !important;
+
+    font-weight: bold;
+}
+
+
+/* Close button */
+
+.close {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #4b176e;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 2000;
+}
+
+.close:hover {
+    background-color: #32104a;
+}
+
+
+/* Small screen */
+
+@media (max-width: 700px) {
+
+    .profile.active {
+        width: 94vw;
+        height: 90vh;
+    }
+
+    .profile-photo {
+        width: 100%;
+        height: 40%;
+    }
+
+    .profile-content {
+        top: 40%;
+        width: 100%;
+        height: 60%;
+
+        padding: 20px;
+    }
+
+    .profile-photo img {
+        height: 90%;
+    }
+}
+
+.card1 {
+    background-image: url("photos/am.jpg");
+}
+
+.card2 {
+    background-image: url("photos/sm.jpg");
+}
+
+.card3 {
+    background-image: url("photos/tp.jpg");
+}
+
+.card4 {
+    background-image: url("photos/as.jpg");
+}
+
+.card5 {
+    background-image: url("photos/bkd.jpg");
+}
+
+.card6 {
+    background-image: url("photos/js.jpg");
+}
+
+.card7 {
+    background-image: url("photos/ng.jpg");
+}
+
+.card8 {
+    background-image: url("photos/sdb.jpg");
+}
+
+.card9 {
+    background-image: url("photos/akl.jpg");
+}
+
+.card10 {
+    background-image: url("photos/sjg.jpg");
+}
+
+.card11 {
+    background-image: url("photos/akd.jpg");
+}

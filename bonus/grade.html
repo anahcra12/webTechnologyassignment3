@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Calculator</title>
+
+    <link rel="stylesheet" href="grade.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Grade & SGPA Calculator</h1>
+
+        <label>Student Name:</label>
+
+        <input type="text"
+               id="studentName"
+               placeholder="Enter student name">
+
+
+        <h3>Enter Marks</h3>
+
+
+        <div class="subject">
+
+            <label>DBMS:</label>
+
+            <input type="number"
+                   id="dbms"
+                   min="0"
+                   max="100">
+
+        </div>
+
+
+        <div class="subject">
+
+            <label>Operating System:</label>
+
+            <input type="number"
+                   id="os"
+                   min="0"
+                   max="100">
+
+        </div>
+
+
+        <div class="subject">
+
+            <label>Computer Networks:</label>
+
+            <input type="number"
+                   id="cn"
+                   min="0"
+                   max="100">
+
+        </div>
+
+
+        <div class="subject">
+
+            <label>Web Technology:</label>
+
+            <input type="number"
+                   id="web"
+                   min="0"
+                   max="100">
+
+        </div>
+
+
+        <div class="subject">
+
+            <label>Data Structures:</label>
+
+            <input type="number"
+                   id="ds"
+                   min="0"
+                   max="100">
+
+        </div>
+
+
+        <button id="calculate">
+            Calculate Result
+        </button>
+
+
+        <button id="reset">
+            Reset
+        </button>
+
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <script src="grade.js"></script>
+
+</body>
+
+</html>
