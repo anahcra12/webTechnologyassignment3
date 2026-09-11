@@ -109,15 +109,34 @@ let faculty = [
         qualification: "PhD",
         subjects: "Current semester subjects — update according to the CST timetable.",
         research: "Data mining, pattern recognition, social networks, bioinformatics, machine learning and multimedia analysis."
+    },
+    {
+        name: "Sulata Mitra",
+        designation: "Professor",
+        photo: "photos/sulata.jpg",
+        email: "sulata@cs.iiests.ac.in",
+        qualification: "PhD",
+        subjects: "Current semester subjects — update according to the CST timetable.",
+        research: "Mobile computing, QoS issues in cellular networks, ad-hoc networks, multihomed mobile networks and disaster management."
+    },
+
+    {
+        name: "Malay Kule",
+        designation: "Assistant Professor",
+        photo: "photos/malay.jpg",
+        email: "malay@cs.iiests.ac.in",
+        qualification: "PhD",
+        subjects: "Current semester subjects — update according to the CST timetable.",
+        research: "Security issues in social networking, hardware security, cryptology, defect tolerance and testing of nanoscale circuits."
     }
 ];
 
 
 // Select all cards
 
-card.forEach(function(c) {
+card.forEach(function (c) {
 
-    c.addEventListener('click', function() {
+    c.addEventListener('click', function () {
 
         let index = Array.from(card).indexOf(c);
 
@@ -168,7 +187,7 @@ function showProfile(index) {
 
 // Close profile
 
-document.querySelector(".close").addEventListener('click', function(event) {
+document.querySelector(".close").addEventListener('click', function (event) {
 
     event.stopPropagation();
 
@@ -181,7 +200,7 @@ document.querySelector(".close").addEventListener('click', function(event) {
 
 // Faculty dropdown
 
-document.getElementById("facultySelect").addEventListener('change', function() {
+document.getElementById("facultySelect").addEventListener('change', function () {
 
     let index = this.value;
 
